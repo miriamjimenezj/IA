@@ -4,7 +4,8 @@
 El propósito de esta práctica es reutilizar código que implementa el algoritmo A*. Se bajará código de Github, y lo utilizará para ejecutar este algoritmo para un grafo concreto.
 
 - Repositorio con el código de algoritmos y estructuras de datos en Java de Justin Wetherell:
-    https://github.com/phishman3579/java-\algorithms-implementation.git
+https://github.com/phishman3579/java-algorithms-implementation.git
+
 
 ## COMPILACIÓN
 

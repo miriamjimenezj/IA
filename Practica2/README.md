@@ -40,9 +40,6 @@ El output representa el camino encontrado por el algoritmo A* al ejecutarlo en e
 
 [ 6(0) ] -> [ 8(0) ] = 14: Finalmente, el camino va desde el vértice 6 hasta el vértice 8 con un costo de 14.
 
-La notación [ X(0) ] indica el vértice X con una heurística de 0. El número entre paréntesis es el costo acumulado desde el inicio hasta ese vértice.
-
-
 ## PREGUNTAS
 
 #### 1. ¿Qué variable representa la lista ABIERTA?

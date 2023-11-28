@@ -11,6 +11,10 @@ El propósito de esta práctica es reutilizar código que implementa el algoritm
 https://github.com/phishman3579/java-algorithms-implementation.git
 
 ## SOBRE EL PROYECTO
+- El grafo implementado en la clase Main.java ubicado dentro del paquete aplicacion es el siguiente:
+
+![Alt text](grafo.jpeg)
+
 - Este proyecto esta elaborado dentro de una maquina Ubuntu.
 - Para instalar ant en ubuntu :
 

@@ -16,14 +16,27 @@ https://github.com/phishman3579/java-algorithms-implementation.git
 
         $sudo apt install ant
 
-
-## COMPILACIÓN
-
-
 ## EJECUCIÓN 
 Ejecutamos el proyecto con los cambios indicados en build.xml:
 
     $ant run_main
+
+Tras ejecutar este comando, el output es el siguiente:
+        
+        run_main:
+        [java] [[ 1(0) ] -> [ 3(0) ] = 9
+        [java] , [ 3(0) ] -> [ 6(0) ] = 2
+        [java] , [ 6(0) ] -> [ 8(0) ] = 14
+        [java] ]
+El output representa el camino encontrado por el algoritmo A* al ejecutarlo en el grafo proporcionado. La interpretación del output es la siguiente:
+
+[ 1(0) ] -> [ 3(0) ] = 9: Este fragmento indica que el camino va desde el vértice 1 hasta el vértice 3 con un costo de 9.
+
+[ 3(0) ] -> [ 6(0) ] = 2: Indica que el camino continúa desde el vértice 3 hasta el vértice 6 con un costo de 2.
+
+[ 6(0) ] -> [ 8(0) ] = 14: Finalmente, el camino va desde el vértice 6 hasta el vértice 8 con un costo de 14.
+
+La notación [ X(0) ] indica el vértice X con una heurística de 0. El número entre paréntesis es el costo acumulado desde el inicio hasta ese vértice.
 
 
 ## PREGUNTAS
@@ -43,7 +56,11 @@ Para que la heurística represente la distancia aérea entre vértices, habría 
 Actualmente, este método devuelve un valor constante (1 por defecto).
 
 #### 5. ¿Realiza este método reevaluación de nudos cuando se encuentra una nueva ruta a un determinado vértice? 
+Sí, el método aStar realiza la reevaluación de nodos cuando se encuentra una nueva ruta a un determinado vértice. Esto se hace en el siguiente bloque de código:
 
+        if (tenativeGScore >= gScore.get(neighbor))
+            continue;
+Aquí, si la nueva ruta encontrada tiene un costo acumulado mayor o igual al costo acumulado conocido hasta el momento para ese vecino, entonces la nueva ruta no se considera y se continúa con la exploración de otros vecinos. Esto asegura que solo se conserven las rutas más cortas y eficientes.
 
 ## LICENCIA:
 Copyright 2023, **Miriam Jiménez** and **Enrique Collado**.

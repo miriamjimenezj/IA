@@ -1,4 +1,4 @@
-#BÚSQUEDA HEURÍSTICA SIN ADVERSARIOS
+# BÚSQUEDA HEURÍSTICA SIN ADVERSARIOS
 
 ## OBJETIVO DE ESTA PRÁCTICA:
 El propósito de esta práctica es reutilizar código que implementa el algoritmo A*. Se bajará código de Github, y lo utilizará para ejecutar este algoritmo para un grafo concreto.

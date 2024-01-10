@@ -1,0 +1,13 @@
+@relation juegosdelhambre
+
+@attribute distrito numeric
+@attribute sexo numeric
+@attribute edad numeric
+@attribute voluntario numeric
+@attribute rating numeric
+@attribute dias_sobrevividos numeric
+@attribute ganador {0,1}
+
+@data
+
+12,0,10,0,12,16,?
